@@ -1,0 +1,212 @@
+*{
+    font-family: Oswald,sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.www{
+    width:130%;
+    
+}
+.product{
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+    width: 380px;
+}
+.product img{
+    width: 97%;
+    margin: 5px 0 0 6px;
+}
+.product-name-price{
+    display: flex;
+    justify-content: space-between;
+}
+.product-name{
+    font-weight: bold;
+    font-size: 23px;
+    width: 70%;
+    min-height: 55px;
+}
+.product-info{
+    margin-left: 15px;
+    font-size: 16px;
+    color: grey;
+    min-height: 72px;
+}
+.product-price{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.product-button{
+    display: flex;
+    gap:25px;
+    
+}
+.product-button button{
+    padding: 10px 40px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    background-clip: padding-box;
+    
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    width: 480px;
+    height: auto;
+    border-radius: 4px;
+    animation: slideDown 0.5s forwards;
+  }
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+
+  @keyframes slideDown{
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+.modal-content h2{
+    text-align: center;
+    font-size: 35px;
+}
+#employeeForm{
+    background-image: linear-gradient(-225deg,#E3FDF5 50%,#FFE6FA 50%);
+    display: grid;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#employeeFormedit{
+    background-image: linear-gradient(-225deg,#E3FDF5 50%,#FFE6FA 50%);
+    display: grid;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.form-group:first-child{
+    margin-top: 15px;
+}
+.container-form{
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(188, 181, 181);
+}
+#employeeForm label{
+    padding: 6px 12px;
+    margin-right: -4.5px;
+    background-color: #EAEDF0;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgb(214, 211, 211);
+}
+#employeeForm input{
+    width: 87%;
+    padding: 6px 10px;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(214, 211, 211);
+}
+#employeeForm input:focus{
+    outline: 3.5px solid rgba(60, 167, 221, 0.4);
+}
+#employeeFormedit label{
+    padding: 6px 12px;
+    margin-right: -4.5px;
+    background-color: #EAEDF0;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid rgb(214, 211, 211);
+}
+#employeeFormedit input{
+    width: 87%;
+    padding: 6px 10px;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(214, 211, 211);
+}
+#employeeFormedit input:focus{
+    outline: 3.5px solid rgba(60, 167, 221, 0.4);
+}
+.close-button{
+    background-color: #e64252;
+    outline: none;
+    border: none;
+    padding: 7px 13px;
+    color: white;
+    border-radius: 3px;
+    font-size: 16.5px;
+    margin: 20px 0px 0px 5px;
+}
+.submit{
+    background-color: #2fa949;
+    outline: none;
+    border: none;
+    padding: 7px 13px;
+    color: white;
+    border-radius: 3px;
+    font-size: 16.5px;
+    margin: 20px 0px 0px 5px;
+}
+.submit:hover{
+    animation: moveUpDown 1s infinite;
+    background-color:#1b7c30 ;
+}
+.inputsub{
+    background-color: #2fa949;
+    outline: none;
+    border: none;
+    padding: 7px 13px;
+    color: white;
+    border-radius: 3px;
+    font-size: 16.5px;
+    margin: 20px 0px 0px 5px;
+}
+.inputsub:hover{
+    animation: moveUpDown 1s infinite;
+    background-color:#1b7c30 ;
+}
+.close-button:hover{
+    animation: moveUpDown 1s infinite;
+    background-color:#CB2E3D;
+}
+#btnThem:hover{
+    animation: moveUpDown 1s infinite;
+    outline: 3.5px solid rgb(173, 185, 239);
+    background-color: #0D71DB;
+}
+#btnThem{
+    background-color: #3e8fe4;
+}
+.sp-thongbao{
+    color: rgb(214, 35, 35);
+    font-size: 17px;
+}
+.btn-danger{
+    padding: 5px;
+}
+.btnedit{
+    border:none;
+    cursor: pointer;
+}
